@@ -9,17 +9,16 @@ def home():
 
 @app.route("/breweries")
 def breweries():
-    return "<p>Welcome to Breweries!</p>"
+    return rt("breweries.html", user ="James Smith")
 
 @app.route("/beer_types")
 def beer_types():
-    return "<p>Welcome to beer types</p>"
+    return rt("beer_types.html", user ="James Smith")
 
 @app.route("/about")
 def about():
-    return "<p>Welcome to about us</p>"
+    return rt("about.html", user ="James Smith")
 
 
-    
 if __name__ == "__main__":
     app.run(debug=True)
